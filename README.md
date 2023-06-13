@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖  vet clinic database <a name="about-project"></a>
+# 📖 vet clinic database <a name="about-project"></a>
 
 **vet clinic database** This project is a relational database to create the initial data structure for a vet clinic.In this project I create a table to store animals' information, insert some data into it, and query it.
 
@@ -58,6 +58,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **create table**
+- **update table**
 - **Inset data**
 - **query data**
 
@@ -67,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](comming soon)
+- [Live Demo] comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
