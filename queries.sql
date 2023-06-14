@@ -2,8 +2,9 @@ BEGIN;
 
 UPDATE animals
 SET species = 'unspecified';
-
+SELECT species from animals;
 ROLLBACK;
+SELECT species from animals
 
 
 BEGIN;
@@ -15,6 +16,9 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species is null;
+SELECT species from animals;
+COMMIT;
+SELECT species from animals;
 
 
 BEGIN;
@@ -22,6 +26,8 @@ BEGIN;
 DELETE FROM animals;
 
 ROLLBACK;
+SELECT species from animals;
+
 
 BEGIN;
 
@@ -38,6 +44,7 @@ ROLLBACK TO DEL_YEAR_2022;
 UPDATE animals
 SET weight_kg = (weight_kg * -1)
 WHERE weight_kg < 0;
+COMMIT;
 
 
 SELECT COUNT(name) AS total
@@ -57,6 +64,7 @@ FROM animals;
 SELECT neutered, SUM(escape_attempts)
 FROM animals
 GROUP BY neutered;
+
 
 SELECT species, MIN(weight_kg) AS min, MAX(weight_kg) AS max
 FROM animals
